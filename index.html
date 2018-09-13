@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DireWolf Design</title>
+</head>
+<body>
+    <aside>
+        <figure>
+            <div id="avatar"></div>
+            <figcaption>DireWolf Design</figcaption>
+        </figure>
+        <img src="images/menu.svg" alt="menu">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>Web Site Design Specialists</h1>
+        <p>Design sharp basic responsive websites for all businesses. This is something that all business must have in 2018 yet many still don't. Having your own web page and services is vital to your customers finding you.</p>
+        <a href="#" class="cta">Contact Me</a>
+    </main>
+
+    <script>
+        
+        (function() {
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+            
+            menulink.addEventListener('click', function(e) {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            })
+        })();
+    </script>
+</body>
+</html>
